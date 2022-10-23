@@ -16,9 +16,16 @@ function Github() {
                   username="introbond"
                   blockSize={15}
                   blockMargin={5}
-                  color="#80ff00"
                   fontSize={16}
-              />
+                  theme={{
+                    level0: '#252526',
+                    level1: '#4e4e4f',
+                    level2: '#6d6d6e',
+                    level3: '#939396',
+                    level4: '#f5f5f5'
+                  }}
+                  showWeekdayLabels
+              />  
           </div>
       </div>
   );
