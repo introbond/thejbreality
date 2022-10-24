@@ -9,7 +9,7 @@ function Github() {
 
     return (
       <div className="github">
-        <button onClick={() => openInNewTab('https://introbond.github.io/portfolio/')} > look under the hood </button>
+        <button onClick={() => openInNewTab('https://introbond.github.io/portfolio/')} > LOOK UNDER THE HOOD </button>
         <div className="github-calendar">
         <p> Recharging in nature, slow morning with coffee & code. </p> 
             <GitHubCalendar
@@ -18,11 +18,11 @@ function Github() {
                   blockMargin={5}
                   fontSize={16}
                   theme={{
-                    level0: '#252526',
-                    level1: '#4e4e4f',
-                    level2: '#6d6d6e',
-                    level3: '#939396',
-                    level4: '#f5f5f5'
+                    level0: '#2d333b',
+                    level1: '#0e4429',
+                    level2: '#006d32',
+                    level3: '#26a641',
+                    level4: '#39d353'
                   }}
                   showWeekdayLabels
               />  
