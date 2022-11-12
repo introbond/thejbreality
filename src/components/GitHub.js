@@ -10,14 +10,17 @@ function Github() {
 
     return (
       <div className="github">
+        <h5> Welcome to my little space </h5>
         <div className="github-calendar">
-          <div className="typewriter">
-            <Typewriter 
-              onInit={(typewriter) => {
-                typewriter.start()
-                .typeString('slow morning with coffee & code');
-              }}
-          />
+          <div className="interest">
+            <ul>
+              <li> Slow morning with coffe & code </li>
+              <li> Meaningful & peaceful living </li>
+              <li> Value investing </li>
+              <li> Traveling </li>
+              <li> Nature </li>
+              <li> Chess </li>
+            </ul>
           </div>
             <GitHubCalendar
                   username="introbond"
@@ -34,7 +37,18 @@ function Github() {
                   hideTotalCount 
                   hideColorLegend
                   showWeekdayLabels
-              />  
+              />
+            <div className="typewriter">
+              <Typewriter 
+                onInit={(typewriter) => {
+                  typewriter.start()
+                  .typeString('Still finding myself.')
+                  .pauseFor(600)
+                  .typeString('<strong>     - James Bond </strong>')
+                }}
+              />
+            </div>
+              
           </div>
         <button onClick={() => openInNewTab('https://introbond.github.io/portfolio/')}> 
           MORE INFO

@@ -17,9 +17,15 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
-  .typewriter {
-    font-size: 25px;
+  .interest {
+    text-align: left;
+    font-size: 15px;
     margin-bottom: 50px;
+  }
+  .typewriter {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 70px;
   }
   .github-calendar {
     width: 70%;
@@ -41,7 +47,7 @@
     margin-right: 40px;
   }
   .github button:hover {
-    color: #fff;
+    color: whitesmoke;
     filter: brightness(110%);
     transform: scale(1.02);
     transition: ease-in 0.1s;
