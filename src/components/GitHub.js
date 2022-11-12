@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from 'typewriter-effect';
 import GitHubCalendar from "react-github-calendar";
 import "./GitHub.css";
 
@@ -9,9 +10,15 @@ function Github() {
 
     return (
       <div className="github">
-        <button onClick={() => openInNewTab('https://introbond.github.io/portfolio/')} > LOOK UNDER THE HOOD </button>
         <div className="github-calendar">
-        <p> Recharging in nature, slow morning with coffee & code. </p> 
+          <div className="typewriter">
+            <Typewriter 
+              onInit={(typewriter) => {
+                typewriter.start()
+                .typeString('slow morning with coffee & code');
+              }}
+          />
+          </div>
             <GitHubCalendar
                   username="introbond"
                   blockSize={15}
@@ -24,9 +31,14 @@ function Github() {
                     level3: '#26a641',
                     level4: '#39d353'
                   }}
+                  hideTotalCount 
+                  hideColorLegend
                   showWeekdayLabels
               />  
           </div>
+        <button onClick={() => openInNewTab('https://introbond.github.io/portfolio/')}> 
+          MORE INFO
+        </button>
       </div>
   );
 }

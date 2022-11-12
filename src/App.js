@@ -4,7 +4,9 @@ import Github from './components/GitHub';
 function App() {
     return (
         <div className="App">
-            <Github/>
+            <div className="card">
+                <Github/>
+            </div>
         </div>
     );
 }
